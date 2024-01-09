@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* this is required sakal */
+*, *:before, *:after {
+	/* box-sizing: border-box; */
+	margin: 0;
+	padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+/* standardize any monospaced elements */
+/* Corrects overflow displayed oddly in IE 9. */
+
+/*===========Usefull CSS===========*/
+
+/* Common Section
+----------------------------------*/
+
+
+
+.container:before, .container:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.container:after {
+	clear: both;
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	max-width: 1336px;
+}
+
+.nav-wrapper {
+	height: auto;
+	/* background: #3E70CB; */
+	background:#27408B;
+
+
+	}
+
+
+/*----Dropdown Menu----*/
+
+.sub-menu i {
+	display: none;
+	
+}
+#nav{
+	margin-left:30px;
+	margin-top:-7px;
+	
+}
+#nav ul {
+	/*changed by sakal  */
+	margin-top: -1px;
+	
+	margin-left: -9999px;
+
+	
+
+}
+#nav li:hover>ul, #nav li.hover>ul, #nav a:focus+ul, #nav .hover a:focus {
+	margin-left: 0;
+	z-index: 100;
+	
+	
+}
+#nav ul a:focus {
+	margin-left: 0px;
+}
+
+
+.nav-wrapper ul li {
+	display: block;
+	float: left;
+	 position: relative;
+	/*  margin-top:-7px; 
+	padding-top:0px; */
+	/* To repersent divider in main menu */
+	/* border-left: 1px solid rgba(0, 0, 0, .1); */
+	border-left: 2px solid white;
+}
+.nav-wrapper {
+	z-index: inherit;
+}
+.nav-wrapper ul li a {
+
+	padding: 0px 11px !important;
+	display: block;
+	line-height: 40px;
+        color: white;
+}
+.nav-wrapper ul li:first-child a {
+/*padding: 0px 23px 0px 23px !important;*/
+}
+
+.nav-wrapper ul li:hover a, .nav-wrapper ul li.hover a, .nav-wrapper ul li.active a {
+	/* background: #000080; */
+	/* change all submenu color */
+	background:#27408B;
+}
+.nav-wrapper ul ul {
+	position: absolute;
+	z-index:2000;
+	top: 100%;
+	left: 0px;
+	/* for line of child sub menue */
+	background: #cdcdcd; 
+	/* changed by sakal */
+	/* width: 300px; */
+	width:400px;
+
+	
+	  display: inline-block;
+}
+.nav-wrapper ul li:hover ul {
+	display: block;
+}
+.nav-wrapper ul ul li {
+	display: block;
+	float: none;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	border-left: 0px;
+}
+.nav-wrapper ul ul li a {
+	display: block;
+	padding: 0px 15px;
+	line-height: 35px;
+	font-size:80%;
+}
+.nav ul li.active a {
+	/* background: black */
+ background: #3E70CB;
+
+
+}
+.nav-wrapper ul ul li.active a, .nav-wrapper ul ul li.hover a, .nav-wrapper ul ul li a:hover {
+	/* background: black */
+ background: #3E70CB;
+
+
+}
+/*----Dropdown Menu----*/
+
+
+
+
+
+/*-----For the BreadCrumbs----*/
+
+.bread_crumbs_color
+{
+	 color:black;
+}
+.bread_crumbs
+{
+	 border-bottom: 1px dashed #aaa;
+    font-size: 10px;
+    display: block;
+    padding: 5px 0;
+    margin-bottom: -15px;
+}
+.sub_bread_crumbs
+{
+display: block;
+    margin: 0 auto!important;	
+}
+
+
+
